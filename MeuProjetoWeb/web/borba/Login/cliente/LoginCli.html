@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="icon" href="/Imagem do site/LOGO-FASIPE-Photoroom.png" type="image/x-icon" />
+        <title>Odontologia</title>
+        <link rel="stylesheet" href="LoginCli.css" />
+    </head>
+    <body>
+        <div class="page-container" role="main">
+            <aside class="login-side" aria-label="Área de login">
+                <h1>ENTRAR</h1>
+                <p class="subtitle">Continue com sua conta</p>
+
+                <form id="loginCliente" method="post" action="/MeuProjetoWeb/LoginClienteServlet">
+
+                    <input type="number" id="ID_PESSOAFIS" name="ID_PESSOAFIS" placeholder="ID Pessoa Física" required />
+
+                    <input type="email" id="email" name="email" placeholder="Email" />
+
+                    <input type="password" id="password" name="password" placeholder="Senha" required autocomplete="current-password" />
+
+                    <button type="submit">Entrar</button>
+                </form>
+                <p class="register-prompt">Não tem uma conta? <a class="register-link" href="/register">Registrar-se</a></p>
+            </aside>
+            <div class="image-side" aria-hidden="true"></div>
+        </div>
+    </body>
+</html>

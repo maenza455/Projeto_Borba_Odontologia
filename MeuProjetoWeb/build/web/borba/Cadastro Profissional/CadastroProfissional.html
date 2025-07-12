@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="icon" href="/MeuProjetoWeb/web/borba/Imagem do site/LOGO-FASIPE-Photoroom.png" type="image/x-icon" />
+        <title>Odontologia</title>
+        <link rel="stylesheet" href="cadastroProfissional.css">
+    </head>
+
+    <body>
+        <div class="page-container" role="main">
+            <aside class="login-side" aria-label="Área de cadastro de profissional">
+                <h1>CADASTRE-SE</h1>
+                <p class="subtitle">Preencha seus dados para criar uma conta profissional.</p>
+                <form id="cadastroProfissionalForm" method="post" action="/MeuProjetoWeb/CadastroProfissionalServlet">
+                    <input type="text" id="nome" name="nome" placeholder="Nome Completo" required aria-required="true"
+                           autocomplete="name" />
+                    <input type="email" id="email" name="email" placeholder="Email" required aria-required="true"
+                           autocomplete="email" />
+
+                    <input type="password" id="password" name="password" placeholder="Senha" required
+                           aria-required="true" autocomplete="new-password" />
+
+                    <button type="submit">Cadastrar</button>
+                </form>
+                <div class="register-prompt">
+                    Já tem uma conta?
+                    <a href="../Login/profissional/LoginPro.html" class="register-link">Entrar</a>
+                </div>
+            </aside>
+            <div class="image-side" aria-hidden="true"></div>
+        </div>
+    </body>
+
+</html>

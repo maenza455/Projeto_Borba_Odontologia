@@ -1,0 +1,143 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    overflow: hidden;
+}
+
+.background {
+    background: url('Imagem do site/PapelParede.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    width: 100%;
+    padding: 2rem;
+}
+
+/* Menu */
+.dropbtn {
+    background-color: #86868621;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #35f05a70;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: #35f05a64;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #ffffffab;
+}
+
+/* Header */
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Hero */
+.hero {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+
+.cadastro-box {
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Sombra suave */
+    border: 2px solid gray; /* Borda cinza */
+    padding: 1rem; /* Espaçamento interno */
+    margin-top: 2rem; /* Espaçamento superior */
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo levemente transparente */
+}
+
+.subtitle {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.title {
+    font-size: 3rem;
+    margin: 1rem 0;
+    line-height: 1.2;
+}
+
+.buttons {
+    margin-top: 2rem;
+}
+
+.btn {
+    padding: 0.7rem 1.5rem;
+    background: white;
+    color: black;
+    border: none;
+    margin-right: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn-outline {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+}
